@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+//    "strict": true,
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "ES2021",
+      "DOM"
+    ]
+  },
+  "include": [
+    ".eslintrc.js",
+    "src/app/types/global.d.ts",
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
